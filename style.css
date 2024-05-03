@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+:root {
+    --background-color:#252222;
+    --hover-color1:#bbbbbb;
+    --hover-color2:#ff4524;
+    --text-color:#FFFFFF;
+    --primary-color: #ff6347;
+    --shadow-color: 0deg 0% 6%;
+    --shadow-elevation-medium:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.37),
+    1.6px 2.1px 3px -0.8px hsl(var(--shadow-color) / 0.37),
+    4.1px 5.4px 7.6px -1.7px hsl(var(--shadow-color) / 0.37),
+    10px 13.1px 18.5px -2.5px hsl(var(--shadow-color) / 0.37);
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-top: 50px;
+    width:100%;
+    z-index: 3;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nav-link {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.nav-link:hover{
+    color: var(--hover-color1);
+}
+
+.content-wrapper {
+    height: 100%;
+    max-width: 1000px;
+    top: 200px;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+
+}
+/*https://www.joshwcomeau.com/shadow-palette/*/
+#intro-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 20px;
+}
+
+
+#pfp {
+    box-shadow: var(--shadow-elevation-medium);
+}
+
+.name2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.pd {
+    font-size: 100px;
+    color: var(--primary-color);
+}
+
+.projects-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, var(--hover-color2) 0%, var(--hover-color2) 50%, var(--primary-color) 50%, var(--primary-color) 100%); /* Gradient background */
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-size: 200% 100%; /* Set initial background size */
+    background-position: right; /* Start position */
+    transition: background-position 0.3s ease; 
+}
+.projects-link:hover {
+    background-position: left;
+    background-color: var(--primary-color);
+}
+.projects-btn {
+  margin-top: 80px;
+}
+
+
+.profile-picture-wrapper {
+    width: 400px;
+    height: 400px;
+
+}
+
+#pfp {
+    height: 400px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+/*About Section Styling*/
+#about-section, #skill-section {
+    margin-bottom:200px;
+}
+.about-sec-title, .skill-section-title, .experience-section-title {
+    margin-bottom: 30px;
+}
+
+.about-me-desc {
+    line-height: 2em;
+    padding: 5px 5px;
+}
+
+/*Skills section styling*/
+.skill {
+    padding:5px 5px;
+    background: var(--primary-color);
+    border: 1px solid #454343;
+    border-radius: 5px;
+}
+
+.date {
+    color: #bbbbbb;
+    width: 200px;
+}
+.experience-container {
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 100px 600px;
+    max-width: 800px;
+}
+
+.experience-1, .experience-2, .experience-3 {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-desc {
+    max-width: 500px;
+    line-height: 2em;
+}
+
+
+
+
