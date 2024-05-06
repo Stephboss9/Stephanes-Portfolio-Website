@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     font-weight: 300;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -51,6 +52,9 @@ body {
     margin-right: 30px;
     font-family: "Roboto Slab", serif;
     font-weight: 400;
+    transition: color .2s ease-in-out;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .nav-link:hover{
@@ -108,10 +112,11 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 400;
     cursor: pointer;
     background-size: 200% 100%; /* Set initial background size */
     background-position: right; /* Start position */
-    transition: background-position 0.3s ease; 
+    transition: background-position 0.4s ease; 
 }
 .projects-link:hover {
     background-position: left;
@@ -226,7 +231,23 @@ body {
     grid-area: 1 / 1 / 1 / 7;
     position: relative;
     z-index: 1;
+    transition: transform .4s ease-in-out;
+    cursor: pointer;
 }
+
+.project-img-wrapper:hover {
+   transform: scale(1.1);
+}
+
+/* .img-odd {
+    grid-area: 1 / 6 / 1 / 12;
+} */
+
+/* .info-odd {
+    grid-area: 1 / 1 / 1 / 7;
+    text-align: left;
+} */
+
 .project-img {
     height: 100%;
     width: 100%;
@@ -263,19 +284,34 @@ body {
 .project-title-link:hover{
     color: var(--primary-color)
 }
-.project-link {
+.project-link, .social-link {
     text-decoration: none;
     color: white;
 }
 .fa-brands, .fa-solid {
     cursor: pointer;
     transition: color .3s ease-in-out;
-    height: 30px;
-    width: 30px;
+    margin-right: 10px;
+
 }
 .fa-brands:hover, .fa-solid:hover {
     color: var(--primary-color);
 }
+.footer {
+    width: 100%;
+    margin-top: 140px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+    max-width: 1000px;
+    border-top: 1px solid rgb(70, 68, 68);
+    margin: 0 auto;
+}
+
 
 
 
