@@ -77,8 +77,8 @@ body {
     max-width: 1000px;
     top: 200px;
     position: relative;
-    align-items: center;
     margin: 0 auto;
+    padding: 0px 0px 15px 15px;
 }
 
 /*https://www.joshwcomeau.com/shadow-palette/*/
@@ -88,6 +88,12 @@ body {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 200px;
+}
+
+@media screen and (max-width:1359px) {
+    .content-wrapper {
+        width: 800px;
+    }
 }
 
 .intro-title {
@@ -183,7 +189,7 @@ body {
 }
 
 
-.profile-picture-wrapper {
+.pfp-wrapper {
     width: 400px;
     height: 400px;
 
@@ -208,6 +214,12 @@ body {
 .about-me-desc {
     line-height: 2em;
     padding: 5px 5px;
+}
+
+@media screen and (max-width:1023px) {
+    .about-me-desc {
+        max-width: 700px;
+    }
 }
 
 /*Skills section styling*/
@@ -363,7 +375,6 @@ a i:hover {
     justify-content: space-between;
     padding: 10px 10px;
     align-items: center;
-    max-width: 1000px;
     border-top: 1px solid rgb(70, 68, 68);
     margin: 0 auto;
 }
