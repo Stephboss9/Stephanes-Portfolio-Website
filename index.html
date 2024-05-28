@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Stephane's Website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-       <div id="nav">
-            <div class="nav-links">
-                <h2><a class="nav-link"href="#about-section">About</a></h2>
-                <h2><a class="nav-link"href="#experience-section">Experience</a></h2>
-                <h2><a class="nav-link"href="#projects-section">Projects</a></h2>
-            </div>
-       </div>
-       <div class="content-wrapper">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stephane's Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <div class="nav-links">
+            <h2><a class="nav-link" href="#about-section">About</a></h2>
+            <h2><a class="nav-link" href="#experience-section">Experience</a></h2>
+            <h2><a class="nav-link" href="#projects-section">Projects</a></h2>
+        </div>
+    </div>
+    <div class="content-wrapper">
         <div id="intro-section">
             <div class="intro-text">
                 <h2 class="intro-title">Hi, welcome to my site. I am</h2>
-                <div class="name2">
+                <div class="name-wrapper">
                     <span class="name">Stephane Mbenga</span>
                     <span class="pd">.</span>
                 </div>
-                
+
                 <h2 class="intro-subtitle">Full Stack Developer • Athlete</h2>
                 <div class="projects-btn"><a class="projects-link" href="#projects-section">See Projects</a> </div>
             </div>
             <div class="pfp-wrapper">
-                <img id="pfp" src="./media/steph-fall.jpg" alt="picture of Stephane Mbenga"/>
+                <img id="pfp" src="./media/steph-fall.jpg" alt="picture of Stephane Mbenga" />
             </div>
-       </div>
-       <div id="about-section">
-            <h2 class="about-sec-title">A b o u t</h2>
+        </div>
+        <div id="about-section">
+            <h2 class="about-sec-title animated-title">A b o u t</h2>
             <p class="about-me-desc">
                 I'm currently a senior studying computer science at the University of Maryland in College Park.
-                This recent summer I interned at LinkedIn as a frontend software engineer where I gained valuable industry experience, learned a ton about Ember.js and accessibility,
-                and networked every chance I could get. My passion for programming came alive during high school, when I was first learning C++. I love creating beautiful, secure, responsive, and accessible web applications. 
-              </p>
-       </div>
-       <div id="skill-section">
-        <h2 class="skill-section-title">S k i l l s e t</h2>
-        <p class="skill-section-title">
+                This recent summer I interned at LinkedIn as a frontend software engineer where I gained valuable
+                industry experience, learned a ton about Ember.js and accessibility,
+                and networked every chance I could get. My passion for programming came alive during high school, when I
+                was first learning C++. I love creating beautiful, secure, responsive, and accessible web applications.
+            </p>
+        </div>
+        <div id="skill-section">
+            <h2 class="skill-section-title">S k i l l s e t</h2>
+            <p class="skill-section-title">
             <div class="skills">
                 <span class="skill">TypeScript</span>
                 <span class="skill">JavaScript</span>
@@ -56,91 +62,102 @@
                 <span class="skill">Node.js</span>
                 <span class="skill">PostgreSQL</span>
             </div>
-        </p>
-      </div>
-      <div id="experience-section">
-        <h2 class="experience-section-title">E x p e r i e n c e</h2>
-        <div class="experience-container">
-            <div class="experience-1">
-                <div class="date">May 2023 - Aug 2023</div>
-                <div class="experience-desc">
-                    <h3 class="company-name">LinkedIn</h3>
-                    <p class="role">UI Engineer Intern</p>
-                    <div class="tasks">
-                        <p> Worked on the onboarding experience team leveraging Ember.js and TypeScript to build
-                            a widget dedicated towards amplifying the visibility of the Get Hired Editorials Newsletter.
-                            The widget was shipped to production. Other tasks
-                            included testing using QUnit, leading bug bashes with my team, and taking on extra tickets.
-                        </p>
-                        <div class="technologies">
-                            <span class="tech">Ember.js</span>
-                            <span class="tech">TypeScript</span>
-                            <span class="tech">GraphQL</span>
-                            <span class="tech">Web Accessibility</span>
-                            <span class="tech">JavaScript</span>
-                            <span class="tech">Git</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="experience-2">
-                <span class="date">Sep 2022 - Dec 2022</span>
-                <div class="experience-desc">
-                    <h3 class="company-name">Hack4Impact</h3>
-                    <p class="role">Software Engineer (Lead)</p>
-                    <div class="tasks">
-                        <p> Worked on enhancing the Hack4Impacts-UMD chapter website using React and TypeScript.
-                            I contributed towards making each page responsive. I increased the performance of the website rewriting strapi backend queries. I also tested for accessibility. I Performed code reviews giving my engineers feedback and advice on best programming practices.
-                            I also put together guides on making pull requests, how to stage, commit, and push code using git, and TypeScript. Led weekly
-                            in-person sprint meetings with the engineers and product manager.
-                            
-                        </p>
-                        <div class="technologies">
-                            <span class="tech">React.js</span>
-                            <span class="tech">TypeScript</span>
-                            <span class="tech">Web Accessibility</span>
-                            <span class="tech">Git</span>
-                            <span class="tech">Strapi</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="experience-3">
-                <span class="date">Jun 2022 - Aug 2022</span>
-                <div class="experience-desc">
-                    <h3 class="company-name">Course Hero</h3>
-                    <p class="role">Software Engineer Intern</p>
-                    <div class="tasks">
-                        <p> Worked with two other interns to formulate a web application (MotivateMe) for college students from. I was in charge of designing the application
-                            using figma and building the frontend using React.js, and TypeScript. I created the dashboard, login, register,
-                            social feed, and task list pages. Worked on the backend as well, and implemented some endpoints for our API for retrieving 
-                            information about a user's friends. Throughout the program I learned how to create beautiful UI using React.js and JavaScript,
-                            setup a database using PostgreSQL, build REST API's with Express and Node, and implement authentication with JSON tokens. 
-                        </p>
-                        <div class="technologies">
-                            <span class="tech">React.js</span>
-                            <span class="tech">JavaScript</span>
-                            <span class="tech">PostgreSQL</span>
-                            <span class="tech">HTML</span>
-                            <span class="tech">CSS</span>
-                            <span class="tech">Chakra UI</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
+            </p>
         </div>
-       <div id="projects-section">
-        <h2 class="projects-section-title">P r o j e c t s</h2>
-            <div class="project">
+        <div id="experience-section">
+            <h2 class="experience-section-title animated-title">E x p e r i e n c e</h2>
+            <div class="experience-container">
+                <div class="experience-1 animated-experience-info">
+                    <div class="date">May 2023 - Aug 2023</div>
+                    <div class="experience-desc">
+                        <h3 class="company-name">LinkedIn</h3>
+                        <p class="role">UI Engineer Intern</p>
+                        <div class="tasks">
+                            <p> Worked on the onboarding experience team leveraging Ember.js and TypeScript to build
+                                a widget dedicated towards amplifying the visibility of the Get Hired Editorials
+                                Newsletter.
+                                The widget was shipped to production. Other tasks
+                                included testing using QUnit, leading bug bashes with my team, and taking on extra
+                                tickets.
+                            </p>
+                            <div class="technologies">
+                                <span class="tech">Ember.js</span>
+                                <span class="tech">TypeScript</span>
+                                <span class="tech">GraphQL</span>
+                                <span class="tech">Web Accessibility</span>
+                                <span class="tech">JavaScript</span>
+                                <span class="tech">Git</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="experience-2 animated-experience-info">
+                    <span class="date">Sep 2022 - Dec 2022</span>
+                    <div class="experience-desc">
+                        <h3 class="company-name">Hack4Impact</h3>
+                        <p class="role">Software Engineer (Lead)</p>
+                        <div class="tasks">
+                            <p> Worked on enhancing the Hack4Impacts-UMD chapter website using React and TypeScript.
+                                I contributed towards making each page responsive. I increased the performance of the
+                                website rewriting strapi backend queries. I also tested for accessibility. I Performed
+                                code reviews giving my engineers feedback and advice on best programming practices.
+                                I also put together guides on making pull requests, how to stage, commit, and push code
+                                using git, and TypeScript. Led weekly
+                                in-person sprint meetings with the engineers and product manager.
+
+                            </p>
+                            <div class="technologies">
+                                <span class="tech">React.js</span>
+                                <span class="tech">TypeScript</span>
+                                <span class="tech">Web Accessibility</span>
+                                <span class="tech">Git</span>
+                                <span class="tech">Strapi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-3 animated-experience-info">
+                    <span class="date">Jun 2022 - Aug 2022</span>
+                    <div class="experience-desc">
+                        <h3 class="company-name">Course Hero</h3>
+                        <p class="role">Software Engineer Intern</p>
+                        <div class="tasks">
+                            <p> Worked with two other interns to formulate a web application (MotivateMe) for college
+                                students from. I was in charge of designing the application
+                                using figma and building the frontend using React.js, and TypeScript. I created the
+                                dashboard, login, register,
+                                social feed, and task list pages. Worked on the backend as well, and implemented some
+                                endpoints for our API for retrieving
+                                information about a user's friends. Throughout the program I learned how to create
+                                beautiful UI using React.js and JavaScript,
+                                setup a database using PostgreSQL, build REST API's with Express and Node, and implement
+                                authentication with JSON tokens.
+                            </p>
+                            <div class="technologies">
+                                <span class="tech">React.js</span>
+                                <span class="tech">JavaScript</span>
+                                <span class="tech">PostgreSQL</span>
+                                <span class="tech">HTML</span>
+                                <span class="tech">CSS</span>
+                                <span class="tech">Chakra UI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects-section">
+            <h2 class="projects-section-title animated-title">P r o j e c t s</h2>
+            <div class="project project-animation">
                 <div class="project-img-wrapper">
-                    <img class=project-img src="./media/Flixster_portfolio_pic.JPG" alt="project-image"/>
+                    <img class=project-img src="./media/Flixster_portfolio_pic.JPG" alt="project-image" />
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title"><a class="project-title-link" href="https://flixster-web-app.vercel.app/">Flixster</a></h3>
+                    <h3 class="project-title"><a class="project-title-link"
+                            href="https://flixster-web-app.vercel.app/">Flixster</a></h3>
                     <p class="project-desc">Shows the now playing, trending, upcoming, popular, and top trending movies.
-                        Users can search for movies as well, watch the trailers, and see other info.  
+                        Users can search for movies as well, watch the trailers, and see other info.
                     </p>
                     <div class="project-technologies">
                         <span class="project-tech">React.js</span>
@@ -150,17 +167,20 @@
                         <span class="project-tech">React-Testing-Library</span>
                     </div>
                     <div class="project-links">
-                        <a class="project-link" href="https://github.com/Stephboss9/Flixster"><i class="fa-brands fa-github fa-xl"></i></a>
-                        <a class="project-link" href="https://flixster-web-app.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+                        <a class="project-link" href="https://github.com/Stephboss9/Flixster"><i
+                                class="fa-brands fa-github fa-xl"></i></a>
+                        <a class="project-link" href="https://flixster-web-app.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="project">
+            <div class="project project-animation">
                 <div class="project-img-wrapper img-odd">
-                    <img class=project-img src="./media/MM_Login_Page.JPG" alt="project-image"/>
+                    <img class=project-img src="./media/MM_Login_Page.JPG" alt="project-image" />
                 </div>
                 <div class="project-info info-odd">
-                    <h3 class="project-title"><a class="project-title-link" href="https://motivateme-v8.surge.sh">MotivateMe</a></h3>
+                    <h3 class="project-title"><a class="project-title-link"
+                            href="https://motivateme-v8.surge.sh">MotivateMe</a></h3>
                     <p class="project-desc">A web application for college students. Helps students stay organized,
                         view statsitics related to their academic performance, and connect with friends!
                     </p>
@@ -172,28 +192,33 @@
                         <span class="project-tech">Chakra UI</span>
                     </div>
                     <div class="project-links">
-                        <a class="project-link" href="https://github.com/Course-Hero-3/MotivateMe"><i class="fa-brands fa-github fa-xl"></i></a>
+                        <a class="project-link" href="https://github.com/Course-Hero-3/MotivateMe"><i
+                                class="fa-brands fa-github fa-xl"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="project">
+            <div class="project project-animation">
                 <div class="project-img-wrapper">
-                    <img class=project-img src="./media/Ecommerce_store_porftolio_piece.JPG" alt="project-image"/>
+                    <img class=project-img src="./media/Ecommerce_store_porftolio_piece.JPG" alt="project-image" />
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title"><a class="project-title-link" href="https://student-store-omega.vercel.app">Ecommerce Store</a></h3>
-                    <p class="project-desc">An ecommerce store application that allows users to purchase food, clothing, tech, and more.
+                    <h3 class="project-title"><a class="project-title-link"
+                            href="https://student-store-omega.vercel.app">Ecommerce Store</a></h3>
+                    <p class="project-desc">An ecommerce store application that allows users to purchase food, clothing,
+                        tech, and more.
                     </p>
                     <div class="project-technologies">
                         <span class="project-tech">React.js</span>
                     </div>
                     <div class="project-links">
-                        <a class="project-link" href="https://github.com/Stephboss9/StudentStore"><i class="fa-brands fa-github fa-xl"></i></a>
-                        <a class="project-link" href="https://student-store-omega.vercel.app"><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
+                        <a class="project-link" href="https://github.com/Stephboss9/StudentStore"><i
+                                class="fa-brands fa-github fa-xl"></i></a>
+                        <a class="project-link" href="https://student-store-omega.vercel.app"><i
+                                class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
                     </div>
                 </div>
             </div>
-       </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -201,15 +226,18 @@
         <div class="footer-content">
             <p class="copyright">© 2024 Stephane Mbenga</p>
             <div class="social-links">
-                <a class="social-link" href="https://www.linkedin.com/in/stephaneyannickmbenga/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-            <a class="social-link" href="https://github.com/Stephboss9/"><i class="fa-brands fa-github fa-xl"></i></a>
+                <a class="social-link" href="https://www.linkedin.com/in/stephaneyannickmbenga/"><i
+                        class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a class="social-link" href="https://github.com/Stephboss9/"><i
+                        class="fa-brands fa-github fa-xl"></i></a>
             </div>
 
-          </div>
-            
+        </div>
+
 
     </div>
     <script src="https://kit.fontawesome.com/c0e9fe4523.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
-    </body>
+</body>
+
 </html>

@@ -8,17 +8,17 @@
 }
 
 :root {
-    --background-color:#252222;
-    --hover-color1:#bbbbbb;
-    --hover-color2:#ff4524;
-    --text-color:#FFFFFF;
+    --background-color: #252222;
+    --hover-color1: #bbbbbb;
+    --hover-color2: #ff4524;
+    --text-color: #FFFFFF;
     --primary-color: #ff6347;
     --shadow-color: 0deg 0% 6%;
     --shadow-elevation-medium:
-    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.37),
-    1.6px 2.1px 3px -0.8px hsl(var(--shadow-color) / 0.37),
-    4.1px 5.4px 7.6px -1.7px hsl(var(--shadow-color) / 0.37),
-    10px 13.1px 18.5px -2.5px hsl(var(--shadow-color) / 0.37);
+        0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.37),
+        1.6px 2.1px 3px -0.8px hsl(var(--shadow-color) / 0.37),
+        4.1px 5.4px 7.6px -1.7px hsl(var(--shadow-color) / 0.37),
+        10px 13.1px 18.5px -2.5px hsl(var(--shadow-color) / 0.37);
 }
 
 body {
@@ -34,7 +34,7 @@ body {
     align-items: center;
     position: fixed;
     margin-top: 50px;
-    width:100%;
+    width: 100%;
     z-index: 3;
 }
 
@@ -68,7 +68,7 @@ body {
     color: var(--text-color);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--hover-color1);
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 /*https://www.joshwcomeau.com/shadow-palette/*/
-#intro-section{
+#intro-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,7 +100,9 @@ body {
     animation-duration: 1s;
 
 }
-.name, .pd {
+
+.name,
+.pd {
     animation-duration: 1.5s;
 }
 
@@ -111,21 +113,21 @@ body {
 .projects-btn {
     animation-duration: 1.7s;
 }
-.name, .pd, .projects-btn, .intro-subtitle, .intro-title{
+
+.name-wrapper,
+.projects-btn,
+.intro-subtitle,
+.intro-title {
     animation-name: text-slide-in;
-    position: relative;
-    left: 35px;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateX(-100px);
 }
 
 @keyframes text-slide-in {
-    from {
-        left: 0px;
-        opacity: 0;
-    }
-
     to {
-        left: 35px;
         opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -152,12 +154,11 @@ body {
     animation-duration: 3s;
 }
 
-.name2 {
+.name-wrapper {
     font-size: 32px;
     margin-bottom: 50px;
+    animation-duration: 1.3s;
 }
-
-
 
 
 .pd {
@@ -168,7 +169,8 @@ body {
 .projects-link {
     display: inline-block;
     padding: 10px 20px;
-    background: linear-gradient(to right, var(--hover-color2) 0%, var(--hover-color2) 50%, var(--primary-color) 50%, var(--primary-color) 100%); /* Gradient background */
+    background: linear-gradient(to right, var(--hover-color2) 0%, var(--hover-color2) 50%, var(--primary-color) 50%, var(--primary-color) 100%);
+    /* Gradient background */
     color: #fff;
     border: none;
     text-align: center;
@@ -176,16 +178,20 @@ body {
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
-    background-size: 200% 100%; /* Set initial background size */
-    background-position: right; /* Start position */
-    transition: background-position 0.4s ease; 
+    background-size: 200% 100%;
+    /* Set initial background size */
+    background-position: right;
+    /* Start position */
+    transition: background-position 0.4s ease;
 }
+
 .projects-link:hover {
     background-position: left;
     background-color: var(--primary-color);
 }
+
 .projects-btn {
-  margin-top: 80px;
+    margin-top: 80px;
 }
 
 
@@ -202,19 +208,50 @@ body {
 }
 
 /*About Section Styling*/
-#about-section, #skill-section, #experience-section, #projects-section {
-    margin-bottom:200px;
+#about-section,
+#skill-section,
+#experience-section,
+#projects-section {
+    margin-bottom: 200px;
 }
-.about-sec-title, .skill-section-title, .experience-section-title, .projects-section-title {
+
+.about-sec-title,
+.skill-section-title,
+.experience-section-title,
+.projects-section-title {
     margin-bottom: 30px;
     font-family: "Roboto Slab", serif;
     font-weight: 400;
 }
 
+.animated-title {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: opacity 1s, transform 1s;
+    transition-delay: .5s;
+
+}
+
+.animated-title.visible {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 .about-me-desc {
     line-height: 2em;
     padding: 5px 5px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+    /* Transition for the slide up effect */
 }
+
+.about-me-desc.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 @media screen and (max-width:1023px) {
     .about-me-desc {
@@ -223,8 +260,8 @@ body {
 }
 
 /*Skills section styling*/
-.skill{
-    padding:5px 5px;
+.skill {
+    padding: 5px 5px;
     background: var(--primary-color);
     border: 1px solid #454343;
     border-radius: 5px;
@@ -234,6 +271,7 @@ body {
     color: #bbbbbb;
     width: 200px;
 }
+
 .experience-container {
     display: grid;
     grid-template-rows: 280px 280 280px;
@@ -241,11 +279,24 @@ body {
     max-width: 800px;
 }
 
-.experience-1, .experience-2, .experience-3 {
+.experience-1,
+.experience-2,
+.experience-3 {
     grid-column: 1 / 3;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+}
+
+.animated-experience-info {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 1s, transform 1s;
+}
+
+.animated-experience-info.visible {
+    opacity: 1;
+    transform: translateX(0px)
 }
 
 .experience-desc {
@@ -258,14 +309,17 @@ body {
     flex-direction: column;
 }
 
-.tasks p, .tech {
-   font-weight: 200;
+.tasks p,
+.tech {
+    font-weight: 200;
 }
+
 .technologies {
     margin-top: 5px;
 }
+
 .tech {
-    padding:5px 5px;
+    padding: 5px 5px;
     background: transparent;
     border: 1px solid #f5e4e4;
     color: #f3efee;
@@ -277,6 +331,20 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.project-animation {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity .5s, transform 1s;
+}
+
+.project-animation.visible {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
 .project {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -284,6 +352,7 @@ body {
     align-items: center;
     margin-bottom: 50px;
 }
+
 .project-info {
     line-height: 2em;
     width: 500px;
@@ -294,6 +363,7 @@ body {
     text-align: right;
 
 }
+
 .project-img-wrapper {
     grid-column: 1 / 8;
     grid-area: 1 / 1 / 1 / 7;
@@ -304,7 +374,7 @@ body {
 }
 
 .project-img-wrapper:hover {
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* .img-odd {
@@ -323,11 +393,11 @@ body {
 }
 
 .project-desc {
-  padding: 20px 15px;
-  border-radius: 5px;
-  border: 1px solid rgb(77, 73, 73);
-  background-color: #525151;
-  
+    padding: 20px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(77, 73, 73);
+    background-color: #525151;
+
 }
 
 .project-technologies {
@@ -349,22 +419,26 @@ body {
     transition: color .3s ease-in-out;
 }
 
-.project-title-link:hover{
+.project-title-link:hover {
     color: var(--primary-color)
 }
+
 a i {
     text-decoration: none;
     color: white;
 }
+
 a i {
     cursor: pointer;
     transition: color .3s ease-in-out;
     margin-right: 10px;
 
 }
+
 a i:hover {
     color: var(--primary-color);
 }
+
 .footer {
     width: 100%;
     margin-top: 140px;
@@ -378,8 +452,3 @@ a i:hover {
     border-top: 1px solid rgb(70, 68, 68);
     margin: 0 auto;
 }
-
-
-
-
-
