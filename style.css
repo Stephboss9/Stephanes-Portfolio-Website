@@ -90,9 +90,9 @@ body {
     margin-bottom: 200px;
 }
 
-@media screen and (max-width:1359px) {
+@media (max-width:850px) {
     .content-wrapper {
-        width: 800px;
+        width: 100%;
     }
 }
 
@@ -196,8 +196,8 @@ body {
 
 
 .pfp-wrapper {
-    width: 400px;
-    height: 400px;
+    /* width: 400px;
+    height: 400px; */
 
 }
 
@@ -205,6 +205,14 @@ body {
     height: 400px;
     width: 350px;
     border-radius: 50%;
+}
+
+@media (max-width: 812px) {
+    #pfp {
+        height: 300px;
+        width: 250px;
+        ;
+    }
 }
 
 /*About Section Styling*/
@@ -253,9 +261,9 @@ body {
 
 
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:850px) {
     .about-me-desc {
-        max-width: 700px;
+        width: 100%;
     }
 }
 
