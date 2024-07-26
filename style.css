@@ -498,6 +498,10 @@ a i:hover {
     margin: 0 auto;
 }
 
+.social-links {
+    display: flex;
+}
+
 .social-link {
     position: relative;
 }
