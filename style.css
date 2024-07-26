@@ -110,12 +110,12 @@ body {
     animation-duration: 1.6s;
 }
 
-.projects-btn {
+.resume-btn {
     animation-duration: 1.7s;
 }
 
 .name-wrapper,
-.projects-btn,
+.resume-btn,
 .intro-subtitle,
 .intro-title {
     animation-name: text-slide-in;
@@ -166,7 +166,7 @@ body {
     color: var(--primary-color);
 }
 
-.projects-link {
+.resume-link {
     display: inline-block;
     padding: 10px 20px;
     background: linear-gradient(to right, var(--hover-color2) 0%, var(--hover-color2) 50%, var(--primary-color) 50%, var(--primary-color) 100%);
@@ -185,12 +185,12 @@ body {
     transition: background-position 0.4s ease;
 }
 
-.projects-link:hover {
+.resume-link:hover {
     background-position: left;
     background-color: var(--primary-color);
 }
 
-.projects-btn {
+.resume-btn {
     margin-top: 80px;
 }
 
@@ -483,8 +483,10 @@ a i:hover {
 
 .footer {
     width: 100%;
+    bottom: 0;
     margin-top: 140px;
     padding: 0px 5px;
+    color: gainsboro;
 }
 
 .footer-content {
@@ -494,4 +496,8 @@ a i:hover {
     align-items: center;
     border-top: 1px solid rgb(70, 68, 68);
     margin: 0 auto;
+}
+
+.social-link {
+    position: relative;
 }
