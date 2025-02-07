@@ -1,5 +1,5 @@
 # My new portfolio website
-Welcome to my 2024 new and updated personal/portfolio website. 
+Welcome to my 2025 portfolio website. 
 
 ### Technologies Used
-* PostgreSQL, Express.js, React.js, Node.js
+* HTML, CSS, JavaScript
